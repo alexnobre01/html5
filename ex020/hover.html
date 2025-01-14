@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #p1 {
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            border: 3px solid black;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: blue;
+        }
+
+        div:hover {
+            background-color: aqua;
+            color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Utilizando hover </h1>
+    <p id="p1">passe o mouse e veja a mágica acontecer:</p>
+    <div>
+        Passe o mouse aqui para ver o texto escondido
+        <p>TEXTO ESCONDIDO KKKKKKKK.......</p>
+    </div>
+    <p>fim da experiência</p>
+</body>
+
+</html>

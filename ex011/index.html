@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture</title>
+</head>
+<body>
+   <h1>Aprandendo a usar a tag picture</h1> 
+   <p>Com a tag picture podemos usar imagens para diferentes tamanhos de telas</p>
+
+   <picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="foto-g">
+   </picture>
+
+   <h2>Agora vamos aprender sobre audio no html</h2>
+   
+   <audio preload="metadata" autoplay controls loop >  
+    <source src="midia/jorge.mp3" type="audio/mpeg">
+    <source src="midia/jorge.mp3" type="audio/mpeg">
+   </audio>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-lasses e pseudo-elemento</title>
+    <style>
+
+/*
+SELETORES PERSONALIZADOS
+
+# id
+. class
+: pseudo-classe
+:: pseudo-elemento
+> children
+*/
+
+        body {
+            font-family: Arial, Helvetica, serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+
+
+        a:hover {
+            color: chartreuse;
+
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        .especial {
+            background-color: brown;
+            color: white;
+
+        }
+
+        .especial::after {
+            font-size: 8px;
+            content: '[Link ou pode ser um simbolo]';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Utilizando Pseudo-classes e Pseudo-elemento</h1>
+    <ul>
+        <li><a href="" class="especial">Repositório Git-Hub</a></li>
+        <li><a href="">Canal do youtube</a></li>
+        <li><a href="">Site do Curso em video</a></li>
+    </ul>
+</body>
+
+</html>
