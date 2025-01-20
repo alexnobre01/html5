@@ -8,7 +8,7 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
-    
+
 }
 
 * {
@@ -16,7 +16,8 @@
     padding: 0;
 }
 
-html, body{
+html,
+body {
     font-family: var(--fonte1);
 }
 
@@ -50,7 +51,7 @@ footer a:hover {
 }
 
 section {
-    
+
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -59,18 +60,40 @@ section {
     font-size: 3.5vw;
 }
 
+section>p {
+    padding-bottom: 1.5em;
+}
+
 section.imagem {
     background-color: rgba(0, 0, 0, 0.144);
+    color: white;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.589);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
 }
 
 section.imagem>p {
-   display: inline-block;
-   padding: 5px;
-    background-color: rgba(0, 0, 0, 0.541);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 section.normal {
     background-color: white;
+}
+
+section#imagem01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover
+
+}
+
+section#imagem02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover
+
 }
 
 footer {
