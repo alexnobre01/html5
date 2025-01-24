@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando tabelas grandes</title>
+
+    <!-- Nas tabelas temos que ter as tags semânticas
+    thead, tbody e tfoot
+    dentro delas temos 
+    tr , th , td
+    e o tituloda tabelas o que fica em cima dela é o
+    caption   -->
+
+    <style>
+        caption{
+            font-size: x-large;
+            font-weight: bold;
+            padding: 5px;
+        }
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+
+        thead {
+            background-color: bisque;
+            
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Criando uma tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>25.000</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td>55.000</td>
+            </tr>
+
+        <tfoot>
+            <th scope="row">Total dos estados</th>
+            <td><strong>100.0000</strong></td>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+
+</html>
