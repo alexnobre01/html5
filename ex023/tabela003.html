@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de tabela</title>
+
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<!--colspan: é refernte a quantidade de colunas que quer ocupar
+    rolspal: é referente a quantidade de linhas que quer ocupar-->
+<body>
+    <h1>Mesclagem de célula</h1>
+    <table>
+        <tr>
+            <td colspan="2">a</td>
+            <td>b</td>
+            <td rowspan="4">c</td>
+        </tr>
+
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+    </table>
+</body>
+
+</html>
