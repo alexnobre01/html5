@@ -4,6 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 03</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: brown;
+        }
+        h1{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form{
+            margin-top: 20px;
+            margin-left: 30px;
+        
+        }
+
+        form>p{
+            padding-top: 10px;
+            font-size: 25px;
+            font-weight: bolder;
+            color: rgb(106, 147, 184);
+            
+        }
+
+        input{
+        height: 25px;
+        padding-left: 10px;
+        }
+
+        .botao{
+            width: 80px;
+            height: 30px;
+            padding: 10px;
+            color: white;
+            background-color: blue;
+            border: 1px solid red;
+            border-radius: 10px;
+
+        }
+
+        .botao:hover{
+            background-color: blueviolet;
+        }
+
+        .botao:active{
+            background-color: chocolate;
+            color: black;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Teste de Formuário</h1>
@@ -15,7 +72,7 @@
         </p>
         <p>
             <label for="imedia">Média do aluno:</label>
-            <input type="number" name="media" id="imedia" placeholder="0 a 10" size="5" required min="0" max="10" step="0.5">
+            <input type="number" name="media" id="imedia" placeholder="0 a 10" size="5" required min="0" max="10" step="0.1">
         </p>
         <p>
             <label for="imes">Periodo letivo</label>
@@ -30,8 +87,8 @@
             <input type="time" name="hora" id="ihora" required>
         </p>
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
         </p>
     </form>
 </body>
