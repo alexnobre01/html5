@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form009</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <fieldset>
+        <legend>Usando output para mostrar valor do range</legend>
+        <form action="">
+            <label for="inum">Número</label>
+            <input type="range" name="num" id="inum" value="5" min="0" max="10"
+            oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
