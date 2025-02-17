@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*Para mobile forst*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background: black url(../imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.466);
+}
+
+img#phone{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+img#tablet{
+    display: none;
+}
+
+img#pc{
+    display: none;
+}
+
+img#print{
+    display: none;
+}
+
+img#tv{
+    display: none;
+}
