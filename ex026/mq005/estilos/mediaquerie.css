@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #m {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        margin: auto;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+
+    }
+}
