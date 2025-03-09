@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,24 @@
         div.conteiner {
             background-color: lightsalmon;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        
+            flex-flow: row wrap;
+            /*prmeiro parametro é de flex-dirextion(row) e o segundo é de flex-wrap(wrap) */
+
         }
 
-        div.item{
+        div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
+            /*não deixa ter espaço na linha quando o conteudo quebra com wrap*/
         }
     </style>
 </head>
+
 <body>
+
     <body>
         <div class="conteiner">
             <div class="item">Exemplo de bloco A</div>
@@ -32,5 +37,6 @@
             <div class="item">Exemplo de bloco F</div>
             <div class="item">Exemplo de bloco G</div>
         </div>
-</body>
+    </body>
+
 </html>
